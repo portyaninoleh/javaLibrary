@@ -1,0 +1,28 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Library</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Уникальный идентификатор книги</td>
+        <td>УДК</td>
+        <td>ISBN</td>
+        <td>Название книги</td>
+        <td>Автор</td>
+        <td>Год издания</td>
+    </tr>
+    #foreach($book in $books)
+        <tr>
+            <td>$book.id</td>
+            <td>$book.udc</td>
+            <td>$book.isbn</td>
+            <td>$book.name</td>
+            <td>$book.author</td>
+            <td>$book.year</td>
+        </tr>
+    #end
+</table>
+</body>
+</html>

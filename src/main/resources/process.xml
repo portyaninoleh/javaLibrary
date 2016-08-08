@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-lazy-init="true">
+
+    <bean class="process.filter.FilterYear" id="filterYear"/>
+    <bean class="process.slicer.Slicer" id="slicer"/>
+
+    <bean class="process.sort.SortAuthor" id="sortAuthor"/>
+    <bean class="process.sort.SortTitle" id="sortTitle"/>
+    <bean class="process.sort.SortYear" id="sortYear"/>
+    <bean class="process.EmptyProcess" id="emptyProcess"/>
+    <bean class="process.ProcessFactory" id="processFactory"/>
+
+</beans>

@@ -1,0 +1,13 @@
+<?xml version="1.0">
+<books>
+    #foreach($book in $books)
+        <book>
+            <id>$book.id</id>
+            <udc>$book.udc</udc>
+            <isbn>$book.isbn</isbn>
+            <title>$book.title</title>
+            <author>$book.author</author>
+            <year>$book.year</year>
+        </book>
+    #end
+</books>
