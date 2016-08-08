@@ -1,0 +1,8 @@
+#foreach($book in $books)
+    Id $book.id
+    UDC $book.udc
+    ISBN $book.isbn
+    Name $book.name
+    Author $book.author
+    Year $book.year
+#end
